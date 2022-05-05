@@ -58,7 +58,12 @@ local waterfill_recipe = {
         {
             type = "item",
             name = "explosives",
-            amount = settings.startup["canalbuilder-recipe-cost"].value
+            amount = settings.startup["canalbuilder-explosives-cost"].value
+        },
+        {
+            type = "item",
+            name = "water-barrel",
+            amount = settings.startup["canalbuilder-water-barrel-cost"].value
         },
     },
     result = "waterfill-item",
