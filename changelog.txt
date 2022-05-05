@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.1.10
+  Overhaul by MaveTheMaverick
+  Features:
+    - Waterfill now places the shallow water tiles included in vanilla Factorio
+    - Removed swimming mechanic - normal water tiles (like those formerly placed by CanalBuilder) can no longer be crossed
+---------------------------------------------------------------------------------------------------
 Version: 1.1.9
   Features:
     - Set waterfill placer pumping speed to 1 (60/s) to differentiate from true Offshore Pump in calculators

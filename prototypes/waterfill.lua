@@ -1,4 +1,4 @@
--- CanalBuilderWLK
+-- CanalBuilderMAV
 -- prototypes.waterfill
 
 local function emptyPic()
@@ -24,7 +24,7 @@ end
 local waterfill_tech = {
     type = "technology",
     name = "waterfill-tech",
-    icon = "__CanalBuilderWLK__/graphics/icons/waterfill_large.png",
+    icon = "__CanalBuilderMAV__/graphics/icons/waterfill_large.png",
     icon_size = 128,
     effects = {
         {
@@ -69,7 +69,7 @@ local waterfill_recipe = {
 local waterfill_item = {
     type = "item",
     name = "waterfill-item",
-    icon = "__CanalBuilderWLK__/graphics/icons/waterfill_small.png",
+    icon = "__CanalBuilderMAV__/graphics/icons/waterfill_small.png",
     icon_size = 32,
     flags = {},
     subgroup = "terrain",
@@ -82,7 +82,7 @@ local waterfill_item = {
 local waterfill_placer = {
     type = "offshore-pump",
     name = "waterfill-placer",
-    icon = "__CanalBuilderWLK__/graphics/icons/waterfill_small.png",
+    icon = "__CanalBuilderMAV__/graphics/icons/waterfill_small.png",
     icon_size = 32,
     picture = emptyPic(),
     collision_mask = {},

@@ -1,18 +1,21 @@
--- CanalBuilderWLK
+-- CanalBuilderMAV
 -- control
 
 local isWaterTile = {
     ["water"] = true,
-    ["deepwater"] = true
+    ["deepwater"] = true,
+    ["water-shallow"] = true
 }
+
 local isTrain = {
     ["locomotive"] = true,
     ["artillery-wagon"] = true,
     ["cargo-wagon"] = true,
     ["fluid-wagon"] = true
 }
+
 local placement = "waterfill-placer"
-local replacement = "water"
+local replacement = "water-shallow"
 
 -- announce self to other mods
 remote.add_interface("CanalBuilder", {
@@ -20,6 +23,7 @@ remote.add_interface("CanalBuilder", {
 })
 
 -- aesthetic ripple
+--[[
 local function make_ripple(player)
     local p = player.position
     local surface = player.surface
@@ -36,8 +40,10 @@ local function make_ripple(player)
         end
     end
 end
+]]
 
 -- aesthetic splash
+--[[
 local function make_splash(player)
     if isWaterTile[player.surface.get_tile(player.position).name] then
         local driving = player.driving
@@ -46,6 +52,7 @@ local function make_splash(player)
         end
     end
 end
+]]
 
 -- waterfill placer handler
 local function replaceDummy(placed)
@@ -79,6 +86,7 @@ local function replaceDummy(placed)
 end
 
 -- check if biter is on water tile and slow down
+--[[
 local function waterSlowdown(entity)
     local isOnWater = isWaterTile[entity.surface.get_tile(entity.position).name]
     local isSlowed = false
@@ -98,8 +106,10 @@ local function waterSlowdown(entity)
         })
     end
 end
+]]
 
 -- biter slowdown handler
+--[[
 local function damageHandler(event)
     local entity = event.entity
     if entity.type == "unit" then
@@ -121,8 +131,10 @@ local function damageHandler(event)
         end
     end
 end
+]]
 
 -- when player moves, ripple + splash
+--[[
 script.on_event(
     defines.events.on_player_changed_position,
     function(e)
@@ -133,8 +145,10 @@ script.on_event(
         end
     end
 )
+]]
 
 -- every now and then, ripple
+--[[
 script.on_event(
     defines.events.on_tick,
     function(event)
@@ -148,6 +162,7 @@ script.on_event(
         end
     end
 )
+]]
 
 -- when the waterfill placer is built
 script.on_event(
@@ -158,7 +173,9 @@ script.on_event(
 )
 
 -- when something is damaged
+--[[
 script.on_event(
     defines.events.on_entity_damaged,
     damageHandler
 )
+]]
