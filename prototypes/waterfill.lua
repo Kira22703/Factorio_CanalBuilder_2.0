@@ -122,3 +122,17 @@ data:extend({
     waterfill_item,
     waterfill_placer
 })
+
+data.raw.tile["water-shallow"].collision_mask = {
+    "water-tile",
+    "floor-layer",
+    "resource-layer",
+    "doodad-layer",
+}
+
+data.raw.tile["water-mud"].collision_mask = {
+    "water-tile",
+    "floor-layer",
+    "resource-layer",
+    "doodad-layer",
+}

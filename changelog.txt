@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.10
-  Overhaul by MaveTheMaverick
+  Overhaul by MaveTheMaverick:
   Features:
     - Waterfill now places the shallow water tiles included in vanilla Factorio
     - Removed swimming mechanic - normal water tiles (like those formerly placed by CanalBuilder) can no longer be crossed
