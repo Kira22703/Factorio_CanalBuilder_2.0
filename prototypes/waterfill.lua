@@ -77,8 +77,8 @@ local waterfill_item = {
     icon = "__CanalBuilderMAV__/graphics/icons/waterfill_small.png",
     icon_size = 32,
     flags = {},
-    subgroup = "terrain",
-    order = "c[landfill]-z-a[water]",
+    subgroup = data.raw["item"]["landfill"].subgroup,
+    order = data.raw["item"]["landfill"].order .. "a",
     stack_size = 100,
     place_result = "waterfill-placer"
 }

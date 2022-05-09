@@ -1,6 +1,6 @@
 {
     "name": "CanalBuilderMAV",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "title": "CanalBuilder Simplified",
     "author": "MostlyNumbers, Walkman100, MaveTheMaverick",
     "factorio_version": "1.1",
@@ -10,7 +10,8 @@
         "! CanalBuilder17",
         "! CanalBuilder18",
         "! CanalBuilder2",
-        "! CanalBuilderWLK"
+        "! CanalBuilderWLK",
+        "(?) Dectorio >= 0.12.5"
     ],
     "description": "Dig shallow canals to extend or connect bodies of water.\n - Adds waterfill\n - Players and vehicles are slowed down in shallow water"
 }

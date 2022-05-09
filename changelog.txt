@@ -1,5 +1,11 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.1.10
+Version: 2.0.1
+Date: 05. 09. 2022
+  Compatibility:
+    - Waterfill is now moved to the Dectorio crafting group
+---------------------------------------------------------------------------------------------------
+Version: 2.0.0
+Date: 05. 06. 2022
   Overhaul by MaveTheMaverick:
     - Waterfill now places the shallow water tiles included in vanilla Factorio
     - Removed swimming mechanic - normal water tiles (like those formerly placed by CanalBuilder) can no longer be crossed
