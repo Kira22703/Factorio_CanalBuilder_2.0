@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.2
+Date: 09. 10. 2022
+  Features:
+    - Significantly improved placement restrictions to ensure waterfill can be placed anywhere adjacent to water
+---------------------------------------------------------------------------------------------------
 Version: 2.0.1
 Date: 05. 09. 2022
   Compatibility:
@@ -9,7 +14,7 @@ Date: 05. 06. 2022
   Overhaul by MaveTheMaverick:
     - Waterfill now places the shallow water tiles included in vanilla Factorio
     - Removed swimming mechanic - normal water tiles (like those formerly placed by CanalBuilder) can no longer be crossed
-    - Modified shallow water collision mask to allow [Cargo Ships](https://mods.factorio.com/mod/cargo-ships) waterways to be placed in shallow water
+    - Modified shallow water collision mask to allow Cargo Ships (https://mods.factorio.com/mod/cargo-ships) waterways to be placed in shallow water
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.9
   Features:

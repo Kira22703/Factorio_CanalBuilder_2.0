@@ -94,6 +94,7 @@ local waterfill_placer = {
     collision_box = {{-0.2, -0.6}, {0.2, 0.3}},
     center_collision_mask = {"water-tile", "object-layer", "player-layer"},
     flags = {"placeable-neutral", "player-creation", "filter-directions"},
+    fluid_box_tile_collision_test = {},
     fluid = "water",
     fluid_box = {
         filter = "water",
@@ -103,7 +104,7 @@ local waterfill_placer = {
                 type = "output"
             }
         },
-        production_type = "output"
+        production_type = "none"
     },
     placeable_position_visualization = {
         priority = "extra-high-no-scale",
