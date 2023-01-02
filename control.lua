@@ -15,7 +15,7 @@ local isTrain = {
 }
 
 local placement = "waterfill-placer"
-local replacement = "water-shallow"
+
 
 -- announce self to other mods
 remote.add_interface("CanalBuilder", {
@@ -24,6 +24,12 @@ remote.add_interface("CanalBuilder", {
 
 -- waterfill placer handler
 local function replaceDummy(placed)
+
+    local replacement = "water-shallow"
+    if settings.global["canalbuilder-alternate-tile"].value then
+        replacement = "water-mud"
+    end
+
     local dir     = placed.direction
     local pos     = placed.position
     local surface = placed.surface
