@@ -137,3 +137,9 @@ data.raw.tile["water-mud"].collision_mask = {
     "resource-layer",
     "doodad-layer",
 }
+
+for i = #waterfill_recipe.ingredients,1,-1 do
+    if waterfill_recipe.ingredients[i].amount == 0 then
+        table.remove(waterfill_recipe.ingredients, i)
+    end
+end
