@@ -67,8 +67,8 @@ local waterfill_recipe = {
         },
     },
     result = {
-        {type="item", name="waterfill", amount = 1}
-    }
+        {type="item", name="waterfill-item", amount = 1}
+    },
 }
 
 -- item
