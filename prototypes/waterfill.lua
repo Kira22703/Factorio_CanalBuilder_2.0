@@ -66,8 +66,9 @@ local waterfill_recipe = {
             amount = settings.startup["canalbuilder-water-barrel-cost"].value
         },
     },
-    result = "waterfill-item",
-    result_count = 1
+    result = {
+        {type="item", name="waterfill", amount = 1}
+    }
 }
 
 -- item
